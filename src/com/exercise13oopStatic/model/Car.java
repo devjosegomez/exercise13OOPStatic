@@ -4,6 +4,7 @@ public class Car {
 	private String serialNumber;
 	private int numberDoors;
 	private boolean isCoupe = false;
+	private String brand;
 	
 	public Car(){
 		
@@ -33,7 +34,16 @@ public class Car {
 		this.numberDoors = numberDoors;
 	}
 	
+	//Getters and setters brand
+	public String getBrand() {
+		return brand;
+	}
 	
+	public void setBrand(String brand) {
+		this.brand = brand;
+	}
+
+	//methods
 	public void CarIsCoupe(boolean isCoupe) {
 		this.isCoupe = isCoupe;
 		if(isCoupe) {
@@ -42,5 +52,7 @@ public class Car {
 			this.numberDoors = 4;
 		}
 	}
+	
+	
 	
 }
