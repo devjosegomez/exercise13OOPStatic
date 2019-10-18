@@ -3,6 +3,7 @@ package com.exercise13oopStatic.model;
 public class Car {
 	private String serialNumber;
 	private int numberDoors;
+	private boolean isCoupe = false;
 	
 	public Car(){
 		
@@ -10,6 +11,7 @@ public class Car {
 	
 	public Car(String serialNumber, int numberDoors){
 		this.serialNumber = serialNumber;
+		this.numberDoors = numberDoors;
 	}
 	
 	 
@@ -18,7 +20,7 @@ public class Car {
 		return serialNumber;
 	}
 	
-	public void setSerialNumber() {
+	public void setSerialNumber(String serialNumber) {
 		this.serialNumber = serialNumber;
 	}
 	
@@ -27,10 +29,19 @@ public class Car {
 		return numberDoors;
 	}
 	
-	public void setNumberDoors() {
+	public void setNumberDoors(int numberDoors) {
 		this.numberDoors = numberDoors;
 	}
 	
+	
+	public void CarIsCoupe(boolean isCoupe) {
+		this.isCoupe = isCoupe;
+		if(isCoupe) {
+			this.numberDoors = 2;
+		}else {
+			this.numberDoors = 4;
+		}
+	}
 	
 	
 }
