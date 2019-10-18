@@ -2,7 +2,7 @@ package com.exercise13oopStatic.model;
 
 public class Car {
 	private String serialNumber;
-	private int numberDoors;
+	private static int numberDoors; //Static [Belongs to the class not to the Obj]
 	private boolean isCoupe = false;
 	private String brand;
 	
@@ -52,7 +52,5 @@ public class Car {
 			this.numberDoors = 4;
 		}
 	}
-	
-	
 	
 }
